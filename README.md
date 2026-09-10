@@ -1,0 +1,3 @@
+### API utilizando FastAPI
+
+API simples, para estudos de desenvolvimento backend com FastAPI
