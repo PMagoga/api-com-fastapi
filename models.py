@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Boolean, Float
 from sqlalchemy.orm import declarative_base
-from sqlalchemy_utils import ChoiceType
+
 
 from orders_routes import pedidos
 
