@@ -44,10 +44,20 @@ alembic init alembic
 #### no arquivo alembic.ini direcionar onde estará o banco de dados
 sqlalchemy.url = sqlite:///banco.db
 
+#### no arquivo .env do alembic importar as bibliotecas os e sys para importar para a pasta principal
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..)))
+
+após isso -> 
+from models import Base 
+target_metadata = Base.metadata
+
 #### criar as tabelas do banco de dados
 alembic revision --autogenerate -m "initial migration"
 
 #### criar as migrações
-alembic 
+alembic upgrade head
 
 
