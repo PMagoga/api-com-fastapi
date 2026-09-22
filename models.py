@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Boolean, Float
 from sqlalchemy.orm import declarative_base
 
-from orders_routes import pedidos
 
 #criar a conexão do bando de dados
 db = create_engine("sqlite:///banco.db")
